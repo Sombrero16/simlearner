@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Racing Advice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d;
+            color: #f0f0f0;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4a4a4a;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #5a5a5a;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="py-6 px-4 md:px-8 lg:px-16 fixed w-full z-50 bg-gray-900 bg-opacity-80 backdrop-blur-sm">
+        <nav class="flex justify-between items-center max-w-7xl mx-auto">
+            <a href="index.html" class="flex-shrink-0 text-white hover:text-gray-300 transition-colors duration-300">
+                <img src="https://simlearner.carrd.co/assets/images/image01.jpg?v=e85c37cb" alt="SimLearner Logo" class="h-10 rounded-lg">
+            </a>
+            <a href="index.html" class="px-4 py-2 border border-gray-600 rounded-lg text-gray-300 hover:border-white hover:text-white transition-colors duration-300">Back to Main Page</a>
+        </nav>
+    </header>
+
+    <!-- General Advice Section -->
+    <section class="py-20 px-4 md:px-8 lg:px-16 pt-32 bg-gray-900">
+        <div class="max-w-7xl mx-auto p-8 rounded-xl bg-gray-900 bg-opacity-80">
+            <h1 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">General Racing Advice</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Fuel Strategy & Brakes -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700">
+                    <h2 class="text-xl font-semibold text-violet-400 mb-4">Fuel Strategy & Brakes</h2>
+                    <ul class="space-y-4 text-gray-400">
+                        <li>
+                            <b>Fuel:</b> Search on Google, Bing, etc., for a fuel calculator. Every car has a different amount of fuel usage, so do 2-4 laps to get an idea of how much fuel you use, then plug into the fuel calculator how long the race is and how much fuel you use.
+                        </li>
+                        <li>
+                            <b>Front/Rear Brakes:</b> Use Pad 1 for less than 2-hour races. Pad 2 for 12 hours, less performance than pad 1 but lasts longer. Pad 3 are wet pads, but can also be used for 24-hour races. Pad 4 for testing brake fade and failure, DON'T USE.
+                        </li>
+                        <li>
+                            <b>Brake Power:</b> Keep at 100%
+                        </li>
+                        <li>
+                            <b>Brake Bias:</b> Adjust this to your setup. A higher bb (brake bias) will usually mean the car stops quicker, but will lead to understeer going into the corner, as the front tyres will run out of grip as it cannot brake and turn at the same time. A lower brake bias will help with rotation around the corners, as the front tyres will have more allocated grip to turn. Front engine cars will need a lower bb as most of the weight is already at the front (apart from aston martin which has a minimum bb of 57%). Rear engine cars, porsche and honda, like the lowest possible bb for rotation, as there is no weight pushing the front down. Mid engine cars do well with any bb.
+                        </li>
+                        <li>
+                            <b>ABS:</b> Higher abs will slow you down. For all cars you should practice on abs 3. Once you get an idea of how it handles with trailbraking you should reduce it to abs 2 in all corners and then abs 1 in chicanes such as monza t1. Once you get to abs 2 and abs 1, increasing the bb will help a bit, as the rear may lock up. Alternatively you can increase the front bumpstop range, which will be discussed in another section.
+                        </li>
+                        <li>
+                            <b>Brake Ducts:</b> These essentially keep the brakes warm/cold depending on how open the ducts are. Lower = closed, therefore hotter brakes. Higher = open, therefore colder brakes. More closed brakes = faster on straights. On cooler tracks 14oc air temp, you should use 2 rear and 3 front to keep the brakes warm enough. Warm tracks at 28oc use 4 rear and 5 front. Then adjust the tyre pressures to 26.8 psi.
+                        </li>
+                        <li>
+                            <b>Slipstream guide:</b> <a href="https://www.slipstreamracing.net/assetto-corsa-competizione-engine-map-guide" class="text-violet-400 hover:text-violet-300 underline" target="_blank">Engine Map Guide</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Mechanical Grip & Dampers -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700">
+                    <h2 class="text-xl font-semibold text-violet-400 mb-4">Mechanical Grip</h2>
+                    <ul class="space-y-4 text-gray-400">
+                        <li>
+                            <b>Antiroll Bars (ARBS):</b> These transfer weight during cornering. Think of it like this, as you turn right, a lower arb setting at the front will cause the front to shift the weight to the left. Typically, a more stiffer arb will resist roll, leading to more improved tyre contact with the road, increasing grip. However, if each car had the same arb settings, they will all react differently. The Mclaren 720s evo2 gt3 works the best with the lowest arb at the rear and the highest arb at the front. The Merc gt3 2020 works the best with highest arb at the rear and a mid-low arb at the front. However, each person should adjust the arb for your own driving style.
+                        </li>
+                        <li>
+                            <b>Steer Ratio:</b> Increase this, you will have to turn the wheel more. Decrease this, you will have to turn the wheel less.
+                        </li>
+                        <li>
+                            <b>Wheel Rate:</b> This is how hard/soft the suspension is. Higher values of N/m means stiffer suspension. After version 1.9 of acc, most grip is where the softest suspensions are at. For front engine cars, you always want the softest front suspension and 1-2 click higher rear suspension. For mid/rear engine cars you want 1 click higher front suspension and softest rear suspension. Having 1-2 click higher suspension rates on the rear will help with understeer in front engine cars, as when you accelerate the suspension will squat less.
+                        </li>
+                        <li>
+                            <b>Bumpstop Rate:</b> The bumpstop is used when the suspension compresses far enough to hit it. Keep this at the lowest (300N) for most grip.
+                        </li>
+                        <li>
+                            <b>Bumpstop Range:</b> This is how far the suspension travels until it hits the bumpstop. Firstly, a higher bumpstop on the rear and front will help when hitting curbs and bumps.
+                            <ul class="ml-4 list-disc list-inside space-y-2">
+                                <li>
+                                    <b>Front Range:</b> This is essential for cornering. When you approach a corner and press on the brakes, the front will compress down, having a smaller bumpstop range means that the front compresses less, which will lead to braking understeer. A larger front bumpstop range will lead to braking oversteer as the front tyres will not be overloaded when the front compresses.
+                                </li>
+                                <li>
+                                    <b>Rear Range:</b> A lower range here will causes the rear suspension to squat less, leading to oversteer. A higher range will squat the rear more, leading to understeer.
+                                </li>
+                                <li>
+                                    <b>Overall:</b> Front range: increase = oversteer, decrease = understeer. Rear range: increase = understeer. decrease = oversteer. Set both bumpstop ranges to half way, then adjust the front until there is no understeer or oversteer when braking or accelerating.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Preload Differential:</b> Increasing this makes the rear wheels spin at the same rate, increasing understeer. Keep it at the base 20nm in gt3s apart from gt2s with lots of oversteer.
+                        </li>
+                    </ul>
+                    <h3 class="text-xl font-semibold text-violet-400 mt-8 mb-4">Dampers</h3>
+                    <ul class="space-y-4 text-gray-400">
+                        <li>
+                            These are shock absorbers which control the speed at which the car suspension compresses (bump) and extends (rebound).
+                        </li>
+                        <li>
+                            <b>Bump:</b> The lower the value the faster the suspension will compress.
+                        </li>
+                        <li>
+                            <b>Fast Bump:</b> Differs from the bump, as this is for quick, short hits to the suspension. Again, lower value means faster compressions.
+                        </li>
+                        <li>
+                            <b>Rebound:</b> Lower value will allow the suspension to return to its original state quicker.
+                        </li>
+                        <li>
+                            <b>Fast Rebound:</b> Controls the rate of extension for quick short hits, similar to fast bump.
+                        </li>
+                        <li>
+                            The meta dampers are 0 0 fast/bump and max max fast/rebound. This is quick and easy to setup and gives good results.
+                        </li>
+                        <li>
+                            Another way is to set all of the other settings to how you want, then put the dampers to 0 everywhere, and use this <a href="https://www.simracing-setupguide.com/dampers-setup-guide/" class="text-violet-400 hover:text-violet-300 underline" target="_blank">fine tune guide</a> to fine tune the last few things.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-center py-6 px-4 md:px-8 lg:px-16">
+        <p class="text-gray-500 text-sm">&copy; 2025 SimLearner. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
