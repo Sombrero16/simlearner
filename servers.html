@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimLearner - Servers & Tracks</title>
+    <!-- Use Tailwind CSS via CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d;
+            color: #f0f0f0;
+        }
+        /* Custom scrollbar for a sleek look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4a4a4a;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #5a5a5a;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="py-6 px-4 md:px-8 lg:px-16 fixed w-full z-50 bg-gray-900 bg-opacity-80 backdrop-blur-sm transition-all duration-300 flex flex-col">
+        <!-- Top Navigation Row -->
+        <nav class="flex justify-between items-center max-w-7xl mx-auto w-full mb-1">
+            <!-- Logo with a link to the home page -->
+            <a href="index.html" class="flex-shrink-0">
+                <img src="https://raw.githubusercontent.com/Simlearner/Main/main/assets/pictures/image01.jpg" alt="SimLearner Logo" class="h-20 rounded-lg shadow-lg transition-all duration-300">
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html#about" class="text-gray-300 hover:text-white transition-colors duration-300">About</a>
+                <a href="index.html#focus" class="text-gray-300 hover:text-white transition-colors duration-300">Our Focus</a>
+                <a href="index.html#how-it-works" class="text-gray-300 hover:text-white transition-colors duration-300">How it Works</a>
+                <a href="index.html#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Book Session</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 text-center">
+            <a href="index.html#about" class="block py-2 text-gray-300 hover:text-white">About</a>
+            <a href="index.html#focus" class="block py-2 text-gray-300 hover:text-white">Our Focus</a>
+            <a href="index.html#how-it-works" class="block py-2 text-gray-300 hover:text-white">How it Works</a>
+            <a href="index.html#contact" class="block py-2 text-gray-300 hover:text-white">Book Session</a>
+        </div>
+        
+        <!-- Second Navigation Row -->
+        <div class="max-w-7xl mx-auto w-full pr-4 md:pr-16 lg:pr-16 flex justify-end items-center space-x-4">
+            <a href="general-advice.html" class="inline-block text-gray-400 hover:text-white text-sm transition-colors duration-300">
+                General Setup Advice
+            </a>
+            <a href="setup-files.html" class="inline-block text-gray-400 hover:text-white text-sm transition-colors duration-300">
+                Setup Files
+            </a>
+            <a href="servers.html" class="inline-block text-white font-bold text-sm transition-colors duration-300">
+                Servers / Tracks
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="pt-48 pb-20 px-4 md:px-8 lg:px-16 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold text-white text-center mb-12">Our Servers</h1>
+            
+            <!-- Track Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Monza Card -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-700 transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://raw.githubusercontent.com/Simlearner/Main/main/assets/pictures/image05.jpg" alt="Monza Track" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-violet-400 mb-2">Zoom at Monza</h3>
+                        <p class="text-gray-400 mb-4">The temple of speed. Famous for its long straights and fast chicanes. A true test of bravery and top-end power.</p>
+                        <a href="#" class="inline-block w-full text-center px-6 py-3 bg-violet-500 hover:bg-violet-600 text-white font-bold rounded-lg transition-colors duration-300">Join Server</a>
+                    </div>
+                </div>
+
+                <!-- Spa Card -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-700 transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://raw.githubusercontent.com/Simlearner/Main/main/assets/pictures/image06.jpg" alt="Spa-Francorchamps Track" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-violet-400 mb-2">Zoom at Spa</h3>
+                        <p class="text-gray-400 mb-4">A driver's favorite. Features the iconic Eau Rouge & Raidillon complex, high-speed corners, and unpredictable weather.</p>
+                        <a href="#" class="inline-block w-full text-center px-6 py-3 bg-violet-500 hover:bg-violet-600 text-white font-bold rounded-lg transition-colors duration-300">Join Server</a>
+                    </div>
+                </div>
+
+                <!-- Bathurst Card -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-700 transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://raw.githubusercontent.com/Simlearner/Main/main/assets/pictures/image07.jpg" alt="Bathurst Track" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-violet-400 mb-2">Zoom at Bathurst</h3>
+                        <p class="text-gray-400 mb-4">The Mountain. A terrifyingly fast and narrow public road circuit that demands ultimate precision and commitment.</p>
+                        <a href="#" class="inline-block w-full text-center px-6 py-3 bg-violet-500 hover:bg-violet-600 text-white font-bold rounded-lg transition-colors duration-300">Join Server</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-5xl mx-auto px-6 py-12 text-sm text-purplebrand-300">
+      <div class="glass card p-6">
+        <h4 class="font-semibold mb-2">Impressum</h4>
+        <p class="text-purplebrand-200 mb-2">
+          Simlearner<br>
+          Maximilian Luca Hummel<br>
+          Rämplestrasse 6<br>
+          85652 Pliening, Germany
+        </p>
+        <p class="text-purplebrand-200 mb-2">
+          Email: <a href="mailto:simlearner@t-online.de" class="link">simlearner@t-online.de</a><br>
+          Telefon: +49 151 67214780
+        </p>
+        <p class="text-purplebrand-200 mb-2">
+          Umsatzsteuer-ID: DEXXXXXXXX (in progress)
+        </p>
+        <p class="text-purplebrand-200">
+          Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
+          Simlearner
+        </p>
+      </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Sticky, shrinking header functionality
+        const header = document.querySelector('header');
+        const logo = header.querySelector('img');
+        const secondRow = document.querySelector('.max-w-7xl.mx-auto.w-full.pr-4');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.remove('py-6');
+                header.classList.add('py-3');
+                logo.classList.remove('h-20');
+                logo.classList.add('h-10');
+                secondRow.classList.add('hidden');
+            } else {
+                header.classList.remove('py-3');
+                header.classList.add('py-6');
+                logo.classList.remove('h-10');
+                logo.classList.add('h-20');
+                secondRow.classList.remove('hidden');
+            }
+        });
+    </script>
+
+</body>
+</html>
